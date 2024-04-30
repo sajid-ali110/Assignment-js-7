@@ -1,0 +1,65 @@
+$foot-bg : #1d3557;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #f0fbefad;
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        background: #f0fbefad;
+    }
+
+    button:hover {
+        background: $foot-bg;
+        color: white;
+    }
+
+    #buttonsBox {
+        button {
+            white-space: nowrap;
+            min-width: 16.8em;
+            font-size: .9rem;
+        }
+    }
+}
+
+
+#clear-btn {
+    font-size: 1px;
+}
+
+header,
+footer {
+    background-color: $foot-bg;
+}
+
+input {
+    border: 1px solid #6c757d62;
+    padding: 0 15px;
+}
+
+input:focus {
+    outline: none;
+    padding: 0 11px;
+    border-left: 5px solid $foot-bg;
+}
+
+#originalString {
+    background: $foot-bg;
+    color: white;
+    padding: 32px 0px;
+}
+
+#result-box {
+    text-align: center;
+    min-height: 244px;
+    padding: 8px 5px;
+}

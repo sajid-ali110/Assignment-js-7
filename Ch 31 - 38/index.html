@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- SCSS / CSS StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Website Icon-->
+    <link rel="icon" href="https://img.icons8.com/ios-filled/2x/javascript-logo.png">
+</head>
+
+<body class="text-center d-flex flex-column">
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a id="logo" class="navbar-brand text-light" href="">Assignments</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon navbar-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav w-75 me-auto mb-2 mb-lg-0 d-flex justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link text-light fw-light" aria-current="page"
+                                    href="javascript:void(0)">Chapter 31 -
+                                    38</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a id="greetBox" class="nav-link text-light" aria-current="page"
+                                    href="javascript:void(0)"></a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 w-100" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="fs-4 pt-5">Chapter # 31 - 38 | Date and Time, Functions: Passing them data and get data from them
+            </h1>
+            <hr>
+            <div class="row">
+                <!-- Input -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2 class="fs-5 mt-4">Input</h2>
+                    <div class="border border-1 border-secondary border-opacity-75 rounded px-3">
+                        <br>
+                        <div class="d-flex justify-content-center w-100">
+                            <input class="fs-6 w-75 bg-transparent rounded-start py-2" type="datetime-local" name=""
+                                id="input">
+                            <button id="clear-btn"
+                                class="fs-6 border border-1 border-secondary rounded-end py-2 px-3">Clear</button>
+                        </div>
+                        <br>
+                        <!-- border-1 border-secondary border-opacity-25  -->
+                    </div>
+                </div>
+                <!-- Original String -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2 class="fs-5 mt-4">Original String</h2>
+                    <div id="originalString"
+                        class="border border-1 border-secondary border-opacity-75 rounded px-3 d-flex justify-content-center align-items-center">
+                    </div>
+                </div>
+            </div>
+            <div id="buttonsBox" class="row">
+                <!-- Buttons -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2 class="fs-5 mt-5">Buttons</h2>
+                    <div class="border border-1 border-secondary rounded border-opacity-75 p-3">
+                        <div class="row pt-1">
+                            <div class="col-lg-6 col-md-6 col-sm-12 pb-2">
+                                <button onclick="nameToday()" type="button" class="btn btn-danger btn">Get name of
+                                    Today</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 pb-2">
+                                <button onclick="calculateBornDays()" type="button" class="btn btn-danger btn">Calculate
+                                    Days Passed since I born</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 pb-2">
+                                <button onclick="nextBirthday()" type="button" class="btn btn-danger btn">When is my
+                                    next Birthday?</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 pb-2">
+                                <a href="#header">
+                                    <button onclick="greetUser()" type="button" class="btn btn-danger btn">Greet
+                                        User</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 pb-2">
+                                <button onclick="tellTime()" type="button" class="btn btn-danger btn">Tell Time
+                                    1</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 pb-2">
+                                <button onclick="tellTime()" type="button" class="btn btn-danger btn">Tell Time
+                                    2</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 pb-2">
+                                <button onclick="tellTime()" type="button" class="btn btn-danger btn">Tell Time
+                                    3</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 pb-2">
+                                <button onclick="tax()" type="button" class="btn btn-danger btn">Calculate
+                                    Tax</button>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <!-- <div class="col-lg-3 col-md-3"></div> -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <button onclick="total()" type="button" class="btn btn-danger btn">Calculate
+                                    Total = Price + Tax</button>
+                            </div>
+                            <!-- <div class="col-3"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Output / Result -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2 class="fs-5 mt-5">Output / Result</h2>
+                    <div id="result-box" class="border border-1 border-secondary border-opacity-75 rounded"></div>
+                    <button id="clear-btn-2" class="my-3 border border-1 border-secondary w-25 rounded fs-6 py-2 ">Clear
+                        Output</button>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </main>
+    <footer class="text-light d-flex align-items-center justify-content-center px-4">
+        <p class="mt-3">Copyright &copy; 2023. Assignment made by <a class="text-light d-inline-block"
+                href="https://github.com/sajid-ali110" target="_blank">SAJID ALI</a></p>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <!-- External JavaScript File -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
